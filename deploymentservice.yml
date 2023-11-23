@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: apvazquez/jenkinscicd:latest
+        image: apvazquez/jenkinscicd:${BUILD_NUMBER}
         ports:
         - containerPort: 3000
         
