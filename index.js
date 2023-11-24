@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('{ "response": "Jenkins es la Ostia!!!" }');
+    res.send('{ "response": "Probando el tagging con el Build ID de Jenkins!" }');
 });
 
 app.get('/will', function (req, res) {
