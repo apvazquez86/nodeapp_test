@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('{ "response": "Probando CICD & k8s!!!!!!!" }');
+    res.send('{ "response": "Jenkins es la Ostia!!!" }');
 });
 
 app.get('/will', function (req, res) {
