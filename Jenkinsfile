@@ -3,6 +3,7 @@ pipeline {
   environment {
     dockerimagename = "apvazquez/jenkinscicd"
     dockerImage = ""
+    tagImage = env.BUILD_ID
   }
 
   agent any
@@ -30,7 +31,7 @@ pipeline {
       steps{
         script {
           docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
-            dockerImage.push("latest")
+            dockerImage.push(tagImage)
           }
         }
       }
