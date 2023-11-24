@@ -3,7 +3,7 @@ pipeline {
   environment {
     dockerimagename = "apvazquez/jenkinscicd"
     dockerImage = ""
-    tagImage = env.BUILD_ID
+    tagImage = "${env.BUILD_NUMBER}"
   }
 
   agent any
